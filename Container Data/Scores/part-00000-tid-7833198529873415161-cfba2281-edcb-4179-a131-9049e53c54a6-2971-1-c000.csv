@@ -1,0 +1,5 @@
+Model,Accuracy
+logistic_reg,1.0
+decision_tree,1.0
+random_forest,1.0
+grid_search,1.0
