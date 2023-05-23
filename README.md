@@ -5,16 +5,16 @@ ADF- Azure Data Factory, a cloud-based ETL and data integration service that all
 # STEPS:
 
 1. Create a container named 'capstone' for storing the data in your storage account.
-![Alt text](../../Screenshots/Screenshot%201.jpg)
+![image](https://github.com/DevanandKP/Azure-Capstone/assets/100085173/97cfeeb6-a861-495a-b1c5-e9a390afe91a)
 
 2. Create a folder named 'data' in the container and upload your dataset inside a folder named 'raw'.
-![Alt text](../../Screenshots/Screenshot%202.jpg)
+![image](https://github.com/DevanandKP/Azure-Capstone/assets/100085173/e2f9c5d2-355a-44e6-bafd-139ee170e686)
 
 3. Create an Azure Databricks workspace named 'devanand_capstone'.
-![Alt text](../../Screenshots/Screenshot%203.jpg)
+![image](https://github.com/DevanandKP/Azure-Capstone/assets/100085173/64297b22-1a39-47a8-abe7-23d7b0196a75)
 
 4. Now launch that workspace and create a cluster under the compute section.
-![Alt text](../../Screenshots/Screenshot%204.jpg)
+![image](https://github.com/DevanandKP/Azure-Capstone/assets/100085173/25c1ec25-4cc5-4689-90be-a078bd21de86)
 
 5. Create 3 different notebooks for data preparation, model training and scoring purposes.
 
@@ -62,14 +62,14 @@ ADF- Azure Data Factory, a cloud-based ETL and data integration service that all
             
 
 7. Create a Data Factory named 'devanand-capstone' and launch it.
-![Alt text](../../Screenshots/Screenshot%207.jpg)
+![image](https://github.com/DevanandKP/Azure-Capstone/assets/100085173/2055d2c5-1df3-4ed8-a83f-c9dff55dffaf)
 
 8. Now go to the manage section and create a linked service for our azure databricks workspace under the comute tab.
 
         i. Select your subscription, your workspace and your existing cluster.
 
         ii. Create an access token for your workspace. (databricks workspace ->  click the user icon in the top-right of the UI -> user setting -> access token -> generate new token).
-   ![Alt text](../../Screenshots/Screenshot%208.jpg)
+   ![image](https://github.com/DevanandKP/Azure-Capstone/assets/100085173/0a8492d8-f83c-4f67-b38f-3c92f7c5c2e4)
 
 9. Now create a new pipeline under the 'Author' tab.
 
@@ -79,13 +79,13 @@ ADF- Azure Data Factory, a cloud-based ETL and data integration service that all
 
         iii. Connect all these notebooks using the 'on success'property.
 
-   ![Alt text](../../Screenshots/Screenshot%209.jpg)
+   ![image](https://github.com/DevanandKP/Azure-Capstone/assets/100085173/5eefa96a-82ec-4f8a-aae6-b880c8c44b16)
 
 10. Click on debug to test run your pipeline.
-![Alt text](../../Screenshots/Screenshot%2010.jpg)
+![image](https://github.com/DevanandKP/Azure-Capstone/assets/100085173/75b6c1a8-19f0-460b-9880-fab98e1a7a85)
 
 11. Select publish all and trigger your pipeline.
 
 12. Check the status of your pipeline runs in the monitor section.
-![Alt text](../../Screenshots/Screenshot%2011.jpg)
-![Alt text](../../Screenshots/Screenshot%2012.jpg)
+![image](https://github.com/DevanandKP/Azure-Capstone/assets/100085173/8c80cae8-4eab-47eb-812e-3eb568b245a7)
+![image](https://github.com/DevanandKP/Azure-Capstone/assets/100085173/cadddc43-a268-4c52-8aa5-32f9b7e2b3ac)
